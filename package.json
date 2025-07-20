@@ -1,0 +1,33 @@
+{
+  "name": "atul",
+  "version": "1.0.0",
+  "description": "CLI tool to know about Atul",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "CLI",
+    "atul"
+  ],
+  "author": "Atul Kumar",
+  "license": "MIT",
+  "bin": {
+    "atul": "./index.mjs"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "vitest",
+    "prepublishOnly": "npm run test && npm audit --audit-level=moderate"
+  },
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "cfonts": "^3.3.0",
+    "chalk": "^5.4.1",
+    "inquirer": "^8.2.6",
+    "node-fetch": "^3.3.2",
+    "ora": "^8.2.0",
+    "os": "^0.1.2"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}
